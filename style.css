@@ -36,6 +36,10 @@ body {
     line-height: 1.5em;
 }
 
+.main h4 {
+    margin-bottom: 0;
+}
+
 #intro {
     display: block;
     overflow: auto;
