@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Renato Ferreira's Homepage</title>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="all">
+            <div id="header">
+                <h1>Renato Ferreira Pinto Jr.</h1>
+                <hr>
+                <h3>
+                    Postdoctoral Research Fellow &mdash; Columbia University
+                </h3>
+                <a href="mailto:renato.ferreira@uwaterloo.ca">renato.ferreira@uwaterloo.ca</a>
+            </div>
+            <hr>
+            <div id="intro" class="main">
+                <img src="img/portrait.png" alt="Portrait of Renato Ferreira"
+                                            width="230"
+                                            id="portrait">
+                <p>
+                I am a postdoc in the Department of Computer Science at Columbia University, hosted
+                by Xi Chen and Rocco Servedio and partially supported by an NSERC Postdoctoral
+                Fellowship.
+                </p>
+
+                <p>
+                Previously, I completed my PhD in Computer Science under the supervision
+                of Eric Blais at the University of Waterloo. Before that, I obtained an MSc at the
+                University of Toronto under the supervision of Yang Xu, and completed my Bachelor's
+                at the University of Waterloo.
+                </p>
+
+                <p>
+                My research is guided by the following question: what kinds of decisions can
+                algorithms make using little information? I am broadly interested in sublinear
+                algorithms, randomness in computation, Boolean functions, high-dimensional functions
+                and geometry, learning theory, and computational statistics.
+                </p>
+
+                <p>
+                In a <a href="https://www.cs.toronto.edu/~renato/">previous life</a>, I studied
+                computational linguistics with a touch of cognitive science at the University of
+                Toronto.
+                </p>
+            </div>
+
+            <!-- <div id="submission" class="main">
+                <h3>In submission</h3>
+
+                <ul>
+                </ul>
+            </div> -->
+
+            <div id="papers" class="main">
+                <h3>Papers</h3>
+
+                <a href="#" onclick="toggleNameExplainer(event)">Citing my works in BibTeX (or, what
+                is my name?)</a>
+                <p id="nameExplainer" style="display:inline">
+                I do not have a middle name, that is, my first name is "Renato" and my last name is
+                "Ferreira Pinto Jr", with initial "F". I believe the easiest way to have BibTeX
+                behave accordingly is to enter my last name as {Ferreira Pinto Jr}. For slides and
+                such, feel free to use the shorter "Ferreira" if that is more convenient.
+                </p>
+
+                <script>
+                    function getExplainer() {
+                        return document.getElementById("nameExplainer");
+                    }
+
+                    function toggleNameExplainer(event) {
+                        event.preventDefault();
+                        const elem = getExplainer();
+                        elem.style.display =
+                            elem.style.display === "none" || elem.style.display === "" 
+                            ? "inline" : "none";
+                    }
+
+                    // Hide using JS for progressive enhancement.
+                    getExplainer().style.display = "none";
+                </script>
+
+                <ul>
+                    <li>
+                        Learning and Testing Convex Functions (To appear, RANDOM 2026) <br>
+                        <strong>RF</strong>, Cassandra Marcussen, Elchanan Mossel, Shivam Nadimpalli
+                        [<a href="https://arxiv.org/abs/2511.11498">arXiv</a>]
+                    </li>
+                    <li>
+                        Testing Distributions Against Bounded Distinguishers
+                        (STOC 2026) <br>
+                        Mark Bun, Rathin Desai, <strong>RF</strong>
+                    </li>
+                    <li>
+                        Computational Complexity in Property Testing (SODA 2026) <br>
+                        <strong>RF</strong>, Diptaksho Palit, Sofya Raskhodnikova
+                        [<a href="https://arxiv.org/abs/2510.05927">arXiv</a>]
+                    </li>
+                    <li>
+                        On the Spectral Expansion of Monotone Subsets of the Hypercube
+                        (RANDOM 2025) <br>
+                        Yumou Fei, <strong>RF</strong>
+                        [<a href="https://arxiv.org/abs/2505.02685">arXiv</a>]
+                    </li>
+                    <li>
+                        Testing Support Size More Efficiently Than Learning Histograms
+                        (STOC 2025) <br>
+                        <strong>RF</strong>, Nathaniel Harms
+                        [<a href="https://arxiv.org/abs/2410.18915">arXiv</a>]
+                        [<a href="https://youtu.be/Zpj0S_9Zpz8?si=SsU0apq3-SelWRXj">video for STOC</a>]
+                    </li>
+                    <li>
+                        Directed Isoperimetry and Monotonicity Testing: A Dynamical Approach
+                        (FOCS 2024) <br>
+                        <strong>RF</strong>
+                        [<a href="https://arxiv.org/abs/2404.17882">arXiv</a>]
+                        [<a href="./pdf/monotonicity_dynamical_approach_slides.pdf">slides</a>]
+                        [animations:
+                            <a href="./video/heat_equation.mp4">heat equation</a>,
+                            <a href="./video/directed_heat_equation.mp4">directed heat equation</a>]
+                        [<a href="https://www.youtube.com/watch?v=LqNJTea4_bM">TCS+ talk</a>]
+                    </li>
+                    <li>
+                        Distribution Testing with a Confused Collector (ITCS 2024) <br>
+                        <strong>RF</strong>, Nathaniel Harms
+                        [<a href="https://arxiv.org/abs/2311.14247">arXiv</a>]
+                    </li>
+                    <li>
+                        Directed Poincaré Inequalities and L<sup>1</sup> Monotonicity Testing of
+                        Lipschitz Functions (RANDOM 2023) <br>
+                        <strong>RF</strong>
+                        [<a href="https://arxiv.org/abs/2307.02193">arXiv</a>]
+                    </li>
+                    <li>
+                        VC Dimension and Distribution-Free Sample-Based Testing (STOC 2021) <br>
+                        Eric Blais, <strong>RF</strong>, Nathaniel Harms
+                        [<a href="https://arxiv.org/abs/2012.03923">arXiv</a>]
+                    </li>
+                </ul>
+            </div>
+
+            <div id="manuscripts" class="main">
+                <h3>Manuscripts</h3>
+
+                <ul>
+                    <li>
+                        Distribution Testing Under the Parity Trace <br>
+                        <strong>RF</strong>, Nathaniel Harms
+                        [<a href="https://arxiv.org/abs/2304.01374">arXiv</a>]
+                    </li>
+                </ul>
+            </div>
+
+            For cognitive science papers, please see
+            <a href="https://www.cs.toronto.edu/~renato">my old webpage</a>.
+        </div>
+    </body>
+</html>

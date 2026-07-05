@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#header h3 {
+    margin-bottom: .5em;
+}
+
+#header p {
+    margin-top: 0;
+}
+
+#header {
+    text-align: center;
+}
+
+#all {
+    background: white;
+    max-width: 80em;
+    text-align: justify;
+    margin: 0 auto;
+    height: 100%;
+    padding: .5em 2em;
+    display: table;
+}
+
+.main {
+    line-height: 1.5em;
+}
+
+#intro {
+    display: block;
+    overflow: auto;
+}
+
+#portrait {
+    float: left;
+    margin-right: 2em;
+}
+
+li {
+    margin-bottom: .3em;
+}
